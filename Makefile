@@ -6,7 +6,7 @@
 #    By: casteria <mskoromec@gmail.com>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/30 20:52:25 by casteria          #+#    #+#              #
-#    Updated: 2020/09/18 05:08:11 by casteria         ###   ########.fr        #
+#    Updated: 2020/09/19 16:47:10 by casteria         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,7 @@ $(NAME): $(OBJECTS) $(HEADER)
 	gcc $(FLAGS) $< -o $@
 
 clean: 
-	rm -f $(OBJECTS) $(BONUS_OBJECTS)
+	rm -f $(OBJECTS) $(BONUS_OBJECTS) $(ADDITIONAL_OBJECTS)
 
 fclean: clean
 	rm -f $(NAME)
