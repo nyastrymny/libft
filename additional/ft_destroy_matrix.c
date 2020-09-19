@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_destroy_matrix.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: casteria <mskoromec@gmail.com>             +#+  +:+       +#+        */
+/*   By: casteria <casteria@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/18 05:03:52 by casteria          #+#    #+#             */
-/*   Updated: 2020/09/18 05:06:15 by casteria         ###   ########.fr       */
+/*   Updated: 2020/09/19 16:52:00 by casteria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,5 @@ void		ft_destroy_matrix(char **matrix)
 			free(matrix[index++]);
 		free(matrix);
 	}
+	matrix = NULL;
 }
